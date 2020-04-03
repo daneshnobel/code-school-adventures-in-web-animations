@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Youtube Animations Practice</title>
+    <link href="public/css/app.css" rel="stylesheet" type="text/css" />
+    <script src="node_modules/jquery/dist/jquery.min.js"> </script>
+</head>
+
+<body>
+    <a href="#" class="btn" id="subscribe-button">
+        <span class="content more">For More!</span>
+        <span class="content subscribe">Subcribe</span>
+        <span class="content thanks">Thank You!</span>
+    </a>
+    <img class="bell-icon hide" src="public/img/91d8507ecc070ce8daf74282ac296c55.gif" />
+</body>
+<script>
+    setTimeout(function () {
+
+
+
+
+        var event = document.createEvent('Event');
+        event.initEvent('mo', true, true);
+        var button = document.getElementById("subscribe-button");
+
+        button.addEventListener("mo", function () {
+            $('.content.more').css('top', '20px');
+            $('.content.thanks').css('top', '-50px');
+            $('#subscribe-button').css('background-color','#D8251C');
+        });
+
+        debugger;
+        button.dispatchEvent(event);
+        console.log('hover done')
+        setTimeout(() => {
+            $('.content.more').css('top', '-60px');
+            $('.content.subscribe').css('top', '20px');
+            
+            setTimeout(() => {
+                $('#subscribe-button').css('left','405px');
+               setTimeout(() => {
+                $('.bell-icon').css('display','initial');
+               }, 300);
+            }, 1000);
+            
+        },3000);
+    }, 3000);
+</script>
+
+</html>

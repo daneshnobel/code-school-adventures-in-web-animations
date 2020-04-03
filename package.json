@@ -1,0 +1,29 @@
+{
+  "name": "cssanimations",
+  "version": "1.0.0",
+  "description": "practiced exercises for the Lecture given by Alyssa Nicoll on code school adventures in web animations",
+  "main": "gruntfile.js",
+  "plugins":["bootstrap","jquery"],
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "fs-extra": "^9.0.0",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "code",
+    "school",
+    "adventures",
+    "in",
+    "web",
+    "animations",
+    "by",
+    "Alyssa",
+    "Nicoll"
+  ],
+  "author": "Danesh Nobel",
+  "license": "MIT"
+}

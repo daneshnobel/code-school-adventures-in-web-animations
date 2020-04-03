@@ -1,0 +1,42 @@
+body.transforms {
+    padding: 0;
+    margin: auto;
+
+    margin-top: 100px;
+    font-family: sans-serif;
+    h3{
+        font-size: large!important;
+        font-weight: 800;
+        text-align: center;
+    }
+    .form-panel {
+        width: 300px;
+        margin: auto;
+        margin-top: 50px;
+        .form-group {
+            position: relative;
+            margin: 35px 5px;
+            .form-input {
+                &:focus + .form-label {
+                    transform: scale(0.8) translateY(-50px);
+                    color: #333333;
+                    font-weight: bold;
+                }
+            }
+            .form-label {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                color: #868686;
+                transition: transform 0.4s, color 0.4s;
+                transform-origin: center left;
+            }
+        }
+
+        .btn.btn-danger {
+            margin: auto;
+            display: block;
+            width: 50%;
+        }
+    }
+}

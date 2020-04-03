@@ -1,0 +1,95 @@
+body.index {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  width: 100%;
+}
+body.index .btn {
+  width: 310px;
+  height: 100px;
+  background-color: #b80d57;
+  color: #fff;
+  display: inline-block;
+  transition: left 0.3s linear, background-color 1s linear;
+  position: absolute;
+  overflow: hidden;
+  left: 484px;
+}
+body.index .btn:hover {
+  background-color: #d8251c;
+  color: #ecfbfc;
+}
+body.index .btn:hover .more {
+  top: -50px !important;
+}
+body.index .btn:hover .subscribe {
+  top: 20px !important;
+}
+body.index .btn .content {
+  transition: top 0.3s;
+  font-size: -webkit-xxx-large;
+  font-weight: bold;
+  position: absolute;
+}
+body.index .btn .content.more {
+  top: 110px;
+  left: 50px;
+}
+body.index .btn .content.subscribe {
+  top: 100px;
+  left: 50px;
+}
+body.index .btn .content.thanks {
+  top: 20px;
+  left: 25px;
+}
+body.index .bell-icon {
+  width: 200px;
+  height: 150px;
+  display: none;
+  position: absolute;
+  top: 168px;
+  left: 720px;
+}
+body.transforms {
+  padding: 0;
+  margin: auto;
+  margin-top: 100px;
+  font-family: sans-serif;
+}
+body.transforms h3 {
+  font-size: large !important;
+  font-weight: 800;
+  text-align: center;
+}
+body.transforms .form-panel {
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
+}
+body.transforms .form-panel .form-group {
+  position: relative;
+  margin: 35px 5px;
+}
+body.transforms .form-panel .form-group .form-input:focus + .form-label {
+  transform: scale(0.8) translateY(-50px);
+  color: #333333;
+  font-weight: bold;
+}
+body.transforms .form-panel .form-group .form-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #868686;
+  transition: transform 0.4s, color 0.4s;
+  transform-origin: center left;
+}
+body.transforms .form-panel .btn.btn-danger {
+  margin: auto;
+  display: block;
+  width: 50%;
+}
